@@ -1,0 +1,151 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CaycenHR Solutions — Payroll &amp; HR for Saint Lucian business</title>
+<meta name="description" content="Statutory-accurate payroll, an employee portal, HR analytics and a board pack — published EC$ pricing from EC$300/month. Partner Programme for accounting and HR firms.">
+<style>
+:root{--navy:#0B2A45;--teal:#16C0BA;--blue:#0E6E96;--lt:#6FD3D0;--cloud:#F4F7F9;--ink:#0E1A24;--slate:#5A6B78;--line:#E2E8ED;--water:#3FB6E8}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:'Segoe UI','Inter',system-ui,-apple-system,sans-serif;color:var(--ink);background:#fff}
+a{color:inherit;text-decoration:none}
+nav{position:sticky;top:0;z-index:40;background:rgba(11,42,69,.97);backdrop-filter:blur(6px);color:#fff;display:flex;align-items:center;gap:30px;padding:14px 7%;font-size:14px}
+nav .brand{display:flex;align-items:center;gap:12px;font-weight:700;letter-spacing:3px;margin-right:auto}
+nav .brand small{display:block;font-size:9px;letter-spacing:4px;color:var(--lt);font-weight:600}
+nav a.link{color:#CFE0EA;padding:6px 2px;border-bottom:2px solid transparent}
+nav a.link:hover,nav a.link.on{color:#fff;border-bottom-color:var(--teal)}
+nav a.cta{background:var(--teal);color:var(--navy);font-weight:700;padding:9px 18px;border-radius:8px}
+.hero{background:linear-gradient(135deg,var(--navy) 0%,#0E3556 62%,var(--blue) 100%);color:#fff;padding:76px 7% 70px}
+.hero h1{font-size:44px;font-weight:650;line-height:1.14;max-width:760px}
+.hero h1 em{font-style:normal;color:var(--lt)}
+.hero p.sub{color:#AFC2D0;font-size:18px;margin:18px 0 44px;max-width:640px;line-height:1.55}
+.shelf{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;max-width:980px}
+.tile{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:20px;display:flex;gap:14px;align-items:center;transition:transform .15s,background .15s}
+.tile:hover{transform:translateY(-3px);background:rgba(255,255,255,.11)}
+.tile b{display:block;font-size:15px}
+.tile span{font-size:12px;color:#AFC2D0}
+section{padding:64px 7%}
+section.alt{background:var(--cloud)}
+.eyebrow{font-size:12px;letter-spacing:4px;color:var(--teal);font-weight:700;text-transform:uppercase;margin-bottom:10px}
+h2{font-size:30px;color:var(--navy);margin-bottom:10px}
+p.lead{color:var(--slate);max-width:700px;line-height:1.65;margin-bottom:34px;font-size:15.5px}
+.products{display:grid;gap:22px}
+.product{display:grid;grid-template-columns:96px 1fr auto;gap:26px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:16px;padding:28px 30px}
+.alt .product{background:#fff}
+.product h3{color:var(--navy);font-size:20px;margin-bottom:6px}
+.product p{color:var(--slate);font-size:14px;line-height:1.6;max-width:560px}
+.product .tag{display:inline-block;font-size:10.5px;letter-spacing:2px;font-weight:700;padding:3px 10px;border-radius:20px;margin-bottom:8px}
+.tag.live{background:#E2F7F6;color:#0B7A76}
+.tag.ext{background:#E8F0F6;color:var(--blue)}
+.tag.soon{background:#EAF6FC;color:#1A7FAF}
+.btn{display:inline-block;background:var(--navy);color:#fff;font-weight:600;font-size:13.5px;padding:12px 22px;border-radius:9px;white-space:nowrap}
+.btn.ghost{background:#fff;color:var(--navy);border:1.5px solid var(--line)}
+.btn:hover{filter:brightness(1.12)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start}
+.split ul{list-style:none;padding:0}
+.split li{padding:8px 0 8px 26px;position:relative;color:var(--ink);font-size:14.5px;line-height:1.5}
+.split li::before{content:"✓";position:absolute;left:0;color:var(--teal);font-weight:700}
+.contact{background:var(--navy);color:#fff;border-radius:18px;padding:44px;display:flex;flex-wrap:wrap;gap:26px;align-items:center;justify-content:space-between}
+.contact h2{color:#fff}
+.contact p{color:#AFC2D0;max-width:520px;line-height:1.6}
+.contact a.mail{color:var(--lt);font-weight:700;font-size:20px}
+footer{background:var(--ink);color:#8FA3B0;padding:30px 7%;font-size:12.5px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+@media(max-width:820px){.product{grid-template-columns:64px 1fr}.product .btn{grid-column:2}.split{grid-template-columns:1fr}.hero h1{font-size:32px}}
+
+:root{--navy:#0B2A45;--teal:#16C0BA;--blue:#0E6E96;--ltteal:#6FD3D0;--cloud:#F4F7F9;--ink:#0E1A24;--slate:#5A6B78;--line:#E2E8ED}
+*{box-sizing:border-box;margin:0}
+body{font-family:'Segoe UI','Inter',system-ui,-apple-system,sans-serif;color:var(--ink);background:#fff}
+.hero{background:linear-gradient(135deg,var(--navy) 0%,#0E3556 70%,var(--blue) 100%);color:#fff;padding:64px 8% 56px}
+.hero .mark{display:flex;align-items:center;gap:18px;margin-bottom:34px}
+.hero h1{font-size:40px;font-weight:650;letter-spacing:.5px;line-height:1.15}
+.hero p.sub{color:#AFC2D0;font-size:18px;margin-top:14px;max-width:640px;line-height:1.5}
+.wordmark{font-size:26px;font-weight:700;letter-spacing:4px}
+.wordmark small{display:block;font-size:11px;letter-spacing:5px;color:var(--ltteal);font-weight:600}
+section{padding:52px 8%}
+section.alt{background:var(--cloud)}
+h2{font-size:26px;color:var(--navy);margin-bottom:8px}
+p.lead{color:var(--slate);max-width:720px;line-height:1.6;margin-bottom:28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:22px}
+.alt .card{background:#fff}
+.card h3{color:var(--navy);font-size:16px;margin-bottom:8px;display:flex;gap:8px;align-items:center}
+.card h3::before{content:"";width:10px;height:10px;border-radius:3px;background:var(--teal);display:inline-block}
+.card p{color:var(--slate);font-size:13.5px;line-height:1.55}
+table.price{width:100%;border-collapse:separate;border-spacing:14px 0;margin-top:10px}
+table.price td{vertical-align:top;background:#fff;border:1px solid var(--line);border-radius:14px;padding:26px 22px;width:25%}
+td.feat{border-top:5px solid var(--teal)}
+td.plain{border-top:5px solid var(--line)}
+.plan{font-size:13px;letter-spacing:3px;color:var(--slate);text-transform:uppercase;font-weight:700}
+.amt{font-size:34px;color:var(--navy);font-weight:700;margin:10px 0 2px}
+.amt small{font-size:14px;color:var(--slate);font-weight:500}
+.per{color:var(--teal);font-weight:600;font-size:14px;margin-bottom:14px}
+ul.inc{list-style:none;padding:0;margin:0}
+ul.inc li{font-size:13px;color:var(--ink);padding:5px 0 5px 22px;position:relative;line-height:1.4}
+ul.inc li::before{content:"✓";position:absolute;left:0;color:var(--teal);font-weight:700}
+.banner{background:var(--navy);color:#fff;border-radius:14px;padding:26px 30px;display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between}
+.banner b{color:var(--ltteal)}
+.note{font-size:12px;color:var(--slate);margin-top:16px;line-height:1.5}
+footer{background:var(--ink);color:#8FA3B0;padding:34px 8%;font-size:12.5px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px}
+.kpi{display:flex;gap:34px;flex-wrap:wrap;margin-top:26px}
+.kpi div b{display:block;font-size:26px;color:var(--ltteal)}
+.kpi div span{font-size:12px;color:#AFC2D0;letter-spacing:1px}
+.example{background:#fff;border:1px solid var(--line);border-left:5px solid var(--teal);border-radius:10px;padding:22px 26px;margin-top:22px}
+.example h3{color:var(--navy);margin-bottom:10px}
+.example p{color:var(--slate);font-size:14px;line-height:1.65}
+.example .math{font-family:Consolas,monospace;color:var(--navy);font-size:14px;background:var(--cloud);border-radius:8px;padding:12px 16px;margin-top:12px;line-height:1.8}
+
+.hero h1{font-size:40px}
+</style></head><body>
+<nav>
+<a class="brand" href="index.html"><svg width="34" height="34" viewBox="0 0 240 240" aria-hidden="true">
+<rect x="8" y="8" width="224" height="224" rx="54" fill="#0B2A45"/>
+<g fill="none" stroke-linecap="round">
+<path d="M160.6 68 A66 66 0 1 1 160.6 172" stroke="#16C0BA" stroke-width="26"/>
+<path d="M143.4 90.1 A38 38 0 1 1 143.4 149.9" stroke="#6FD3D0" stroke-width="11" opacity=".92"/>
+</g><circle cx="172" cy="120" r="9" fill="#16C0BA"/></svg><span>CAYCEN<small>GROUP</small></span></a>
+<a class="link" href="index.html">Home</a>
+<a class="link" href="index.html#products">Products</a>
+<a class="link on" href="caycenhr.html">CaycenHR</a>
+<a class="link" href="index.html#about">About</a>
+<a class="cta" href="mailto:sales@caycengroup.com">sales@caycengroup.com</a>
+</nav>
+<div class="hero"><div class="eyebrow" style="color:var(--lt)">CAYCENHR SOLUTIONS</div>
+<h1>Modern payroll &amp; HR for Saint Lucian business.</h1><p class="sub">Statutory-accurate payroll, an employee portal your staff will actually use, and the reports your directors ask for — at a price built for businesses of every size.</p></div>
+
+<section><h2>Payroll and HR, done the Saint Lucian way</h2>
+<p class="lead">CAYCEN HR is built on Saint Lucia's statute — cumulative PAYE, NIC, severance, vacation law, and the public-holiday calendar are the engine, not a setting. Every plan, including Essentials, gets flawless statutory compliance: correctness is never a paid upgrade.</p>
+<div class="grid">
+<div class="card"><h3>Statutory engine</h3><p>Cumulative PAYE with in-period refund policy, NIC with current caps, IRD-approved allowances, payslips, C3 &amp; C2 schedules, TD4/TD5 — filed-ready, every month.</p></div>
+<div class="card"><h3>Employee portal</h3><p>Staff see their own payslips, request leave with medical certificates attached, maintain their contact and emergency details, and acknowledge company policies — from any phone.</p></div>
+<div class="card"><h3>Managers approve</h3><p>Your organisation chart routes leave requests to the right manager automatically. Decisions are one tap; everything is audited.</p></div>
+<div class="card"><h3>Insights &amp; board pack</h3><p>Headcount, turnover, sick absence, overtime %, vacation and redundancy liability in EC$ — with a one-page printable board pack directors actually read.</p></div>
+<div class="card"><h3>One-file payday</h3><p>A bank-ready payment file covers every salary and every deduction remittance in a single download, generated only from committed, immutable figures.</p></div>
+<div class="card"><h3>Bank-grade controls</h3><p>Two-factor authentication for administrators, separation of duties (no one both prepares and releases money), immutable committed runs, and a full audit trail.</p></div>
+</div></section>
+<section class="alt"><h2>Plans &amp; pricing</h2>
+<p class="lead">Simple, published, in EC$. The base covers your company; the per-employee rate scales with your team. Annual prepayment saves 10%.</p>
+<table class="price"><tr>
+<td class="plain"><div class="plan">Essentials</div><div class="amt">EC$300<small>/month</small></div><div class="per">+ EC$10 per employee</div>
+<ul class="inc"><li>Full statutory payroll engine</li><li>Payslips, C3, C2, TD4, TD5</li><li>Pay-run approval workflow</li><li>Complete audit trail</li><li>Administrator &amp; officer logins</li><li>Emailed one-time invitations</li></ul></td>
+<td class="feat"><div class="plan">Professional</div><div class="amt">EC$400<small>/month</small></div><div class="per">+ EC$15 per employee</div>
+<ul class="inc"><li>Everything in Essentials</li><li>Employee self-service portal</li><li>Manager-routed approvals &amp; org chart</li><li>Email notifications</li><li>Loans &amp; salary advances</li><li>Policy acknowledgements</li><li>Bank payment file</li></ul></td>
+<td class="plain"><div class="plan">Premium</div><div class="amt">EC$500<small>/month</small></div><div class="per">+ EC$20 per employee</div>
+<ul class="inc"><li>Everything in Professional</li><li>Insights dashboard &amp; KPI analytics</li><li>Printable monthly board pack</li><li>CSV exports &amp; ledger journal</li><li>Branded web address included</li></ul></td>
+<td class="plain" style="background:var(--navy);border-color:var(--navy)"><div class="plan" style="color:var(--ltteal)">Enterprise</div><div class="amt" style="color:#fff">from EC$2,500<small style="color:#AFC2D0">/month</small></div><div class="per">tailored per-employee rate · quote</div>
+<ul class="inc" style="color:#fff"><li style="color:#fff">Everything in Premium</li><li style="color:#fff">Service-level agreement</li><li style="color:#fff">Named support contact</li><li style="color:#fff">Quarterly service review</li><li style="color:#fff">Custom domain &amp; scaled onboarding</li></ul></td>
+</tr></table>
+<p class="note">Every plan includes statutory correctness, security, MFA, and support — compliance is never tiered. Prices exclude VAT where applicable.</p>
+</section>
+
+<section class="alt" id="partners">
+<div class="eyebrow">For accounting &amp; HR firms</div>
+<h2>The Partner Programme</h2>
+<p class="lead">Run your whole client portfolio on white-label CaycenHR: one console for your book, a branded door for every client, wholesale pricing at 30% off list — and the statutory engine carrying the compliance risk your spreadsheets used to. Partner platform EC$250/month, waived from your fifth active client. Ask for the partner pack.</p>
+<a class="btn" href="mailto:sales@caycengroup.com?subject=CaycenHR%20Partner%20Programme">Request the partner pack →</a>
+</section>
+<section><div class="banner"><div><b>Live in days, not months.</b> No implementation project, no setup fee — a guided conversion of your current payroll, emailed invitations to your team, and your first parallel run this month.</div>
+<div style="font-size:14px">Book a demo · <b>sales@caycengroup.com</b></div></div></section>
+
+
+<footer><div><b style="color:#fff">CaycenHR Solutions</b> · a Caycen Group product · Castries, Saint Lucia</div>
+<div>sales@caycengroup.com — Prices in EC$, per company per month. Founding rates: reviewed annually; your rate locks for 24 months.</div></footer>
+</body></html>
