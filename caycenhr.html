@@ -94,6 +94,24 @@ footer{background:var(--ink);color:#8FA3B0;padding:34px 8%;font-size:12.5px;disp
 .example .math{font-family:Consolas,monospace;color:var(--navy);font-size:14px;background:var(--cloud);border-radius:8px;padding:12px 16px;margin-top:12px;line-height:1.8}
 
 .hero h1{font-size:40px}
+
+/* ---- mobile optimisation pass (Sep 2026) ---- */
+@media(max-width:820px){
+  nav{flex-wrap:wrap;gap:8px 18px;padding-top:10px;padding-bottom:10px}
+  nav a{padding:8px 2px;display:inline-block}          /* comfortable tap targets */
+  nav .brand{letter-spacing:2px}
+  /* pricing: four side-by-side cards become a stacked column */
+  table.price{border-spacing:0}
+  table.price,table.price tbody,table.price tr,table.price td{display:block;width:100%}
+  table.price td{margin:0 0 14px}
+  .hero{padding-left:6%;padding-right:6%}
+  section{padding-left:6%;padding-right:6%}
+}
+@media(max-width:480px){
+  .hero h1{font-size:28px}
+  h2{font-size:24px}
+  .amt{font-size:32px}
+}
 </style></head><body>
 <nav>
 <a class="brand" href="index.html"><svg width="34" height="34" viewBox="0 0 240 240" aria-hidden="true">
