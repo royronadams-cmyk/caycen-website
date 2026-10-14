@@ -51,7 +51,30 @@ table.heads th{background:var(--navy);color:#fff;font-weight:600}
 .btn{display:inline-block;background:var(--navy);color:#fff;font-weight:600;font-size:13.5px;padding:12px 22px;border-radius:9px;white-space:nowrap}
 .btn:hover{filter:brightness(1.12)}
 footer{background:var(--ink);color:#8FA3B0;padding:34px 8%;font-size:12.5px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px}
-@media(max-width:820px){.hero h1{font-size:32px}table.price{display:block}table.price tr{display:grid;gap:14px}table.price td{width:auto;display:block}}
+
+/* ---- mobile (13 Oct 2026): nothing wider than the screen, nav wraps, type scales ---- */
+html,body{max-width:100%;overflow-x:hidden}
+img,svg,table{max-width:100%}
+@media(max-width:820px){
+  nav{flex-wrap:wrap;gap:6px 14px;padding:10px 5%;font-size:13px}
+  nav .brand{width:100%;margin-right:0;margin-bottom:4px}
+  nav a.cta{margin-left:auto;padding:7px 12px;font-size:12px}
+  .hero{padding:40px 5% 36px}
+  .hero h1{font-size:28px}
+  .hero p.sub{font-size:16px}
+  section{padding:36px 5%}
+  h2{font-size:22px}
+  .kpi{gap:18px}
+  .kpi div b{font-size:20px}
+  .scroll-x{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  table.heads{min-width:560px}
+  table.price{display:block;border-spacing:0}
+  table.price tbody,table.price tr{display:block}
+  table.price td{display:block;width:100%;margin-bottom:14px}
+  .banner{padding:20px}
+  footer{flex-direction:column}
+}
+@media(max-width:400px){nav a.link{padding:4px 0}.hero h1{font-size:25px}}
 </style></head><body>
 <nav>
 <a class="brand" href="index.html"><svg width="34" height="34" viewBox="0 0 240 240" aria-hidden="true">
@@ -97,8 +120,8 @@ footer{background:var(--ink);color:#8FA3B0;padding:34px 8%;font-size:12.5px;disp
 <td class="plain" style="background:var(--navy);border-color:var(--navy)"><div class="plan" style="color:var(--lt)">Enterprise</div><div class="amt" style="color:#fff">Premium + EC$500<small style="color:#AFC2D0">/month</small></div><div class="per">service retainer · no minimum head-count</div>
 <ul class="inc" style="color:#fff"><li style="color:#fff">Everything in Premium</li><li style="color:#fff">Service-level agreement</li><li style="color:#fff">Dedicated success manager</li><li style="color:#fff">Custom integrations</li><li style="color:#fff">Custom domain &amp; Caycen-led onboarding</li></ul></td>
 </tr></table>
-<table class="heads"><tr><th>Active employees</th><th>1–10</th><th>11–25</th><th>26–50</th><th>51–100</th><th>101–300</th><th>301+</th></tr>
-<tr><td>Per employee per month, every plan</td><td>included</td><td>EC$10</td><td>EC$8</td><td>EC$6</td><td>EC$5</td><td>EC$4</td></tr></table>
+<div class="scroll-x"><table class="heads"><tr><th>Active employees</th><th>1–10</th><th>11–25</th><th>26–50</th><th>51–100</th><th>101–300</th><th>301+</th></tr>
+<tr><td>Per employee per month, every plan</td><td>included</td><td>EC$10</td><td>EC$8</td><td>EC$6</td><td>EC$5</td><td>EC$4</td></tr></table></div>
 <p class="note">Every plan includes statutory correctness, security, MFA and support — compliance is never tiered. Additional entities in one group take 50% off the plan base. No setup fee: onboarding and year-to-date conversion are included. Prices exclude VAT where applicable.</p>
 </section>
 
