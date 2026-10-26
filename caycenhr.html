@@ -46,6 +46,18 @@ table.heads{border-collapse:collapse;margin-top:16px;font-size:13.5px}
 table.heads th,table.heads td{border:1px solid var(--line);padding:8px 14px;text-align:left}
 table.heads th{background:var(--navy);color:#fff;font-weight:600}
 .banner{background:var(--navy);color:#fff;border-radius:14px;padding:26px 30px;display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between}
+.demo-wrap{display:grid;grid-template-columns:1fr 1.4fr;gap:34px;margin-top:34px;align-items:start}
+.demo-form{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.demo-form label{display:block;font-size:12.5px;color:var(--slate);font-weight:600}
+.demo-form input,.demo-form select,.demo-form textarea{display:block;width:100%;margin-top:5px;font:inherit;font-size:14px;color:var(--ink);padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:#fff}
+.demo-form input:focus,.demo-form select:focus,.demo-form textarea:focus{outline:none;border-color:var(--teal);box-shadow:0 0 0 3px rgba(22,192,186,.18)}
+.demo-form .full{grid-column:1/-1}
+.demo-form .hp{position:absolute;left:-9999px;top:-9999px;height:0;overflow:hidden}
+.demo-foot{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.demo-foot button{border:0;cursor:pointer;font:inherit}
+.demo-foot button:disabled{opacity:.6;cursor:default}
+.demo-msg{font-size:13px;color:var(--navy);font-weight:600}
+.demo-fine{font-size:11.5px;color:var(--slate);margin:0}
 .banner b{color:var(--lt)}
 .note{font-size:12px;color:var(--slate);margin-top:16px;line-height:1.5}
 .btn{display:inline-block;background:var(--navy);color:#fff;font-weight:600;font-size:13.5px;padding:12px 22px;border-radius:9px;white-space:nowrap}
@@ -72,6 +84,8 @@ img,svg,table{max-width:100%}
   table.price tbody,table.price tr{display:block}
   table.price td{display:block;width:100%;margin-bottom:14px}
   .banner{padding:20px}
+  .demo-wrap{grid-template-columns:1fr;gap:18px}
+  .demo-form{grid-template-columns:1fr;padding:16px}
   footer{flex-direction:column}
 }
 @media(max-width:400px){nav a.link{padding:4px 0}.hero h1{font-size:25px}}
@@ -87,7 +101,7 @@ img,svg,table{max-width:100%}
 <a class="link" href="index.html#products">Products</a>
 <a class="link on" href="caycenhr.html">CaycenHR</a>
 <a class="link" href="index.html#about">About</a>
-<a class="cta" href="mailto:sales@caycengroup.com">sales@caycengroup.com</a>
+<a class="cta" href="#demo">Request a demo</a>
 </nav>
 <div class="hero"><div class="eyebrow" style="color:var(--lt)">CAYCENHR SOLUTIONS</div>
 <h1>Modern payroll &amp; HR for <em>OECS</em> business.</h1>
@@ -135,9 +149,44 @@ img,svg,table{max-width:100%}
 <p class="lead">Run your whole client portfolio on white-label CaycenHR: one console for your book, a branded door for every client, and the statutory engine carrying the compliance risk your spreadsheets used to. Partners buy at wholesale — a platform fee of EC$200/month plus 70% of each client's published card — and may never charge a client more than the published card, so you compete on service, never on price. Founding terms are available to the first firm in each island. Ask for the partner pack.</p>
 <a class="btn" href="mailto:sales@caycengroup.com?subject=CaycenHR%20Partner%20Programme">Request the partner pack →</a>
 </section>
-<section class="alt"><div class="banner"><div><b>Live in days, not months.</b> No implementation project, no setup fee — a guided conversion of your current payroll with its year-to-date balances, emailed invitations to your team, and your first parallel run this month.</div>
-<div style="font-size:14px">Book a demo · <b>sales@caycengroup.com</b></div></div></section>
+<section class="alt" id="demo"><div class="banner"><div><b>Live in days, not months.</b> No implementation project, no setup fee — a guided conversion of your current payroll with its year-to-date balances, emailed invitations to your team, and your first parallel run this month.</div>
+<div style="font-size:14px">Book a demo below · or <b>sales@caycengroup.com</b></div></div>
+<div class="demo-wrap">
+<div><div class="eyebrow">Request a demo</div><h2>Tell us about your payroll</h2>
+<p class="lead" style="margin-bottom:0">A short note is enough. Someone from Caycen replies within one business day with a time for a 30-minute walk-through on your own numbers.</p></div>
+<form id="demo-form" class="demo-form" autocomplete="on" novalidate>
+<label>Company <input name="company" required maxlength="120" placeholder="Harbour Marine Ltd"></label>
+<label>Your name <input name="contact" maxlength="120" placeholder="Ava Bay"></label>
+<label>Work e-mail <input name="email" type="email" required maxlength="160" placeholder="ava@harbour.vc"></label>
+<label>Phone <input name="phone" type="tel" maxlength="40" placeholder="+1 784 …"></label>
+<label>Island <select name="island"><option value="">choose…</option><option value="LC">Saint Lucia</option><option value="SVG">St Vincent &amp; the Grenadines</option></select></label>
+<label>Employees <select name="headcount_band"><option value="">choose…</option><option>1-10</option><option>11-25</option><option>26-50</option><option>51-100</option><option>101-300</option><option>300+</option></select></label>
+<label class="full">Anything we should know? <textarea name="message" rows="3" maxlength="2000" placeholder="Monthly and fortnightly staff, moving off a spreadsheet, want the NIS and PAYE filings done for us…"></textarea></label>
+<label class="hp" aria-hidden="true">Website <input name="website" tabindex="-1" autocomplete="off"></label>
+<div class="full demo-foot"><button class="btn" type="submit">Request a demo →</button><span class="demo-msg" id="demo-msg"></span></div>
+<p class="full demo-fine">We use what you send only to arrange the demo. No mailing list.</p>
+</form>
+</div></section>
+<script>
+(function(){
+  var f=document.getElementById('demo-form'),m=document.getElementById('demo-msg'),t0=Date.now();
+  if(!f)return;
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var d={t:t0};new FormData(f).forEach(function(v,k){d[k]=String(v).trim();});
+    if(!d.company||!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(d.email)){m.textContent='Company and a work e-mail, please.';return;}
+    var b=f.querySelector('button');b.disabled=true;m.textContent='Sending…';
+    fetch('https://hr.caycengroup.com/api/public/pipeline/intake',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)})
+      .then(function(r){return r.json().then(function(j){return {ok:r.ok,j:j};});})
+      .then(function(x){
+        if(x.ok){f.reset();m.textContent='Thank you — we will be in touch within one business day.';}
+        else{b.disabled=false;m.textContent=(x.j&&x.j.error)||'Something went wrong — e-mail sales@caycengroup.com.';}
+      })
+      .catch(function(){b.disabled=false;m.textContent='Could not send — e-mail sales@caycengroup.com.';});
+  });
+})();
+</script>
 
 <footer><div><b style="color:#fff">CaycenHR Solutions</b> · a Caycen Group product · Castries, Saint Lucia · Kingstown, St Vincent &amp; the Grenadines</div>
-<div>sales@caycengroup.com — Prices in EC$, per company per month. Published 13 October 2026, feature list revised 24 October 2026; prices revised on not less than 60 days' notice.</div></footer>
+<div>sales@caycengroup.com — Prices in EC$, per company per month. Published 13 October 2026, feature list revised 24 October 2026, demo request form added 26 October 2026; prices revised on not less than 60 days' notice.</div></footer>
 </body></html>
